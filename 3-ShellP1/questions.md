@@ -16,9 +16,7 @@
 - One topic you should have found information on is "redirection". Please provide at least 3 redirection examples that we should implement in our custom shell, and explain what challenges we might have implementing them.
 
     > **Answer**:  _1. echo "Hello, World!" > output.txt  -  Output Redirection must detects > first in the commands then it will open the file and go to write mode & then finally must use dup2() to redirect STDOUT so that the output is written in the file instead of the terminal.
- 
                     2. echo "Check dir"; ls nonexistent_folder 2> error.log  -  Errors redirection exist when the shell detects 2> where it then extract the filename for error logging. Then it must open the file in write mode and use dup2() to redirect STDERR to the file so that it make sure that the error messages is captured instead of being displayed on the terminal.
-
                     3. echo "Sort txt"; sort < input.txt  -  Input redirection is when the shell detects < where it extract the file and oopen it in read mode and use dup2() to redirect STDIN so that the command reads input from the file._
 
 - You should have also learned about "pipes". Redirection and piping both involve controlling input and output in the shell, but they serve different purposes. Explain the key differences between redirection and piping.
