@@ -9,7 +9,7 @@
 
 3. In `dshlib.c`, the function `build_cmd_list(`)` must trim leading and trailing spaces from each command before storing it. Why is this necessary? If we didn't trim spaces, what kind of issues might arise when executing commands in our shell?
 
-    > **Answer**:  _if we don't trim the space it could interfere with the shell commands like if "echo    hello" we would get "echo" command instead. by trimming space, we could prevent the shell from having unnecessary errors due to whitespace _
+    > **Answer**:  _if we don't trim the space it could interfere with the shell commands like if "echo    hello" we would get "echo" command instead. by trimming space, we could prevent the shell from having unnecessary errors due to whitespace._
 
 4. For this question you need to do some research on STDIN, STDOUT, and STDERR in Linux. We've learned this week that shells are "robust brokers of input and output". Google _"linux shell stdin stdout stderr explained"_ to get started.
 
